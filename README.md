@@ -161,7 +161,7 @@ src/
 │   ├── black_scholes   # Analytical options pricing & Greeks
 │   ├── monte_carlo     # MC simulation with regime switching
 │   ├── portfolio       # Portfolio management & P&L surfaces
-│   └── market_data     # Synthetic market data generator
+│   └── market_data     # Real-time & historical market data (OHLC via yfinance)
 ├── strategies/         # Options strategy library
 │   ├── options_strategies  # 10+ strategy factories
 │   └── strategy_manager    # Regime-based strategy selection
@@ -184,7 +184,7 @@ src/
 ### Data Flow
 
 ```
- Market Data (Synthetic S&P 500)
+ Market Data (Live OHLC via yfinance — 20 assets)
            |
            v
 +------------------------+
